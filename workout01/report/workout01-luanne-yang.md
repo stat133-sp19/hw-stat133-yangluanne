@@ -41,8 +41,6 @@ At this point, it is easy to conclude that Curry, Thompson, and Durant were the 
 
 Out of the total 1250 shots, Curry made approximately 46.72% of the shots. Klay Thompson was not far behind Curry. During the season, he made a total of 1220 shots with a 47.13% success rate. This makes sense because as the shooting guard, Thompson’s most important job is to score points. Draymond made 578 shots with an accuracy of 42.39% and Durant made 915 shots with an accuracy of 54.10%. Second only to Durant, Iguodala scores atleast one point 51.75% of the times he attempts a shot. Even though Curry and Thompson appeared to have contributed the most to the team, in reality, neither of them had a shot percentage over 50%. While Iguodala, who did not shoot as often during the season, had a higher accuracy than both Curry and Thompson.
 
-![](workout01-luanne-yang_files/figure-markdown_github/unnamed-chunk-6-1.png)
-
 #### 2PT Effective Shooting % by Players
 
 | name           |  total|  made|  perc\_made|
@@ -53,7 +51,7 @@ Out of the total 1250 shots, Curry made approximately 46.72% of the shots. Klay 
 | Klay Thompson  |    640|   329|    51.40625|
 | Draymond Green |    346|   171|    49.42197|
 
-Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots. ![](workout01-luanne-yang_files/figure-markdown_github/unnamed-chunk-8-1.png)
+Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots.
 
 #### 3PT Effective Shooting % by Players
 

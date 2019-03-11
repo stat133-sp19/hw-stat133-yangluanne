@@ -79,64 +79,8 @@ PT <- full_join(total, made, by = 'name')
 PT <- PT %>%
   mutate(perc_made = made / total * 100) %>%
   arrange(desc(perc_made))
-
-PT_1 <- PT %>% arrange(name)
-PT2_1 <- PT2 %>% arrange(name)
-PT3_1 <- PT3 %>% arrange(name)
-PT2_2 <- PT2_1 %>%
-  mutate(perc_of_total = total / PT_1$total * 100, perc_made_of_total = made / PT_1$made * 100) %>%
-  select(name, perc_of_total, perc_made_of_total)
-PT3_3 <- PT3_1 %>%
-  mutate(perc_of_total = total / PT_1$total * 100, perc_made_of_total = made / PT_1$made * 100) %>%
-  select(name, perc_of_total, perc_made_of_total)
 ```
-```{r echo = FALSE, results = 'hide'}
-# close to hoop shots
-andre_shots <- shots %>%
-  filter(name == 'Andre Iguodala' & x >= -100 & x <=100 & y <= 100) %>%
-  group_by(shot_made_flag) %>%
-  summarise(Andre = n())
-andre_shot_types <- shots %>%
-  filter(name == 'Andre Iguodala') %>%
-  group_by(action_type) %>%
-  summarise(Andre = n())
 
-dray_shots <- shots %>%
-  filter(name == 'Draymond Green' & x >= -100 & x <=100 & y <= 100) %>%
-  group_by(shot_made_flag) %>%
-  summarise(Draymond = n())
-dray_shot_types <- shots %>%
-  filter(name == 'Draymond Green') %>%
-  group_by(action_type) %>%
-  summarise(Draymond = n())
-
-curry_shots <- shots %>%
-  filter(name == 'Stephen Curry' & x >= -100 & x <=100 & y <= 100) %>%
-  group_by(shot_made_flag) %>%
-  summarise(Stephen = n())
-curry_shot_types <- shots %>%
-  filter(name == 'Stephen Curry') %>%
-  group_by(action_type) %>%
-  summarise(Stephen = n())
-
-kevin_shots <- shots %>%
-  filter(name == 'Kevin Durant' & x >= -100 & x <=100 & y <= 100) %>%
-  group_by(shot_made_flag) %>%
-  summarise(Durant = n())
-kevin_shot_types <- shots %>%
-  filter(name == 'Kevin Durant') %>%
-  group_by(action_type) %>%
-  summarise(Durant = n())
-
-klay_shots <- shots %>%
-  filter(name == 'Klay Thompson' & x >= -100 & x <=100 & y <= 100) %>%
-  group_by(shot_made_flag) %>%
-  summarise(Thompson = n())
-klay_shot_types <- shots %>%
-  filter(name == 'Klay Thompson') %>%
-  group_by(action_type) %>%
-  summarise(Thompson = n())
-```
 At this point, it is easy to conclude that Curry, Thompson, and Durant were the better shooters for reasons such as their positions allowed them to get more shots or that they are just more skilled in shooting. However, a closer look at the numbers gives a different perspective.
 
 #### Effective Shooting % by Players
@@ -147,40 +91,12 @@ kable(PT)
 Out of the total 1250 shots, Curry made approximately 46.72% of the shots. Klay Thompson was not far behind Curry. During the season, he made a total of 1220 shots with a 47.13% success rate. This makes sense because as the shooting guard, Thompson’s most important job is to score points. Draymond made 578 shots with an accuracy of 42.39% and Durant made 915 shots with an accuracy of 54.10%. Second only to Durant, Iguodala scores atleast one point 51.75% of the times he attempts a shot. Even though Curry and Thompson appeared to have contributed the most to the team, in reality, neither of them had a shot percentage over 50%. While Iguodala, who did not shoot as often during the season, had a higher accuracy than both Curry and Thompson.
 
 
-```{r echo = FALSE}
-ggplot(PT, aes(x = total, y = made)) + geom_point() + geom_smooth(method = 'lm') 
-```
-
-
-
 #### 2PT Effective Shooting % by Players
 ```{r echo=FALSE}
 kable(PT2)
 ```  
 
 Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots. 
-```{r echo = FALSE}
-ggplot(PT2, aes(x = total, y = made)) + geom_point() + geom_smooth(method = 'lm') 
-```
-
-
-```{r echo=FALSE, eval=FALSE}
-kable(PT2_2)
-```
-
-
-
-
-```{r echo = FALSE, eval=FALSE}
-tble2 <- full_join(dray_shot_types, andre_shot_types, by = 'action_type')
-tble2 <- full_join(tble2, curry_shot_types, by = 'action_type')
-tble2 <- full_join(tble2, klay_shot_types, by = 'action_type')
-tble2 <- full_join(tble2, kevin_shot_types, by = 'action_type')
-tble2 <- rename(tble2, ActionType = action_type)
-kable(tble2)
-```
-
-
 
 #### 3PT Effective Shooting % by Players
 ```{r echo = FALSE}
@@ -188,9 +104,8 @@ kable(PT3)
 ```  
 
 Similarly, the data for 3 pointers shows that Curry have the most attempted shots, followed closely by Thompson. On top of most total shots, both players also have the highest shot percentages. Thompson with a percent of 42.41% out of 580 total shots and Curry with a percent of 40.76% out of 687 total shots. Iguodala had the lowest number of shots, but Green had the lowest shot percentage of 31.89%.
-```{r echo = FALSE, eval = FALSE}
-kable(PT3_3)
-```
+
+
 ### Conclusion  
 
 In conlusion, while some players had more attempted shots than others, more shots do not more shots made. Andre Iguodala is an ideal example of this. He had the least number of shots but had a higher shot made percentage than players such as Stephen Curry, who took and made the most shots. This may also be due to each player’s skill level. Draymond Green threw more shots than Iguodala, but had the lowest overall accuracry among all the five players.
