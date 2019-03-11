@@ -86,12 +86,5 @@
   summary(dat)
   sink()
 
-  ## Section: extra logistics
-  ################################################## 
-  Ig <- nrow(Iguodala[Iguodala$period == 4 & Iguodala$period <= 5, ]) / nrow(Iguodala) * 100
-  Dray <- nrow(Green[Green$period == 4 & Green$period <= 5, ]) / nrow(Green) * 100
-  Dur <- nrow(Durant[Durant$period == 4 & Durant$period <= 5, ]) / nrow(Durant) * 100
-  Thom <- nrow(Thompson[Thompson$period == 4 & Thompson$period <= 5, ]) / nrow(Thompson) * 100
-  Cur <- nrow(Curry[Curry$period == 4 & Curry$period <= 5, ]) / nrow(Curry) * 100
-  tot <- nrow(dat[dat$period == 4 & dat$minutes_remaining <= 5, ]) / nrow(dat) * 100
+
   
