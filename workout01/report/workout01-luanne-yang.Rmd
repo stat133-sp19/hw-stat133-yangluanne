@@ -6,22 +6,22 @@ output: github_document
 ---
 ### Introduction
 
-The Golden State Warriors are known as one of the most succesful teams in the basketball world. Out of the several records that they have made, the most recent and noteable one would have to be during the 2015-2016 season when the Warriors broke the NBA record for most wins in a regular season by winning a total of 73 games with only 9 losses [^1]. Sadly, the Warriors did not win the championship in 2015, but they did win the following 2016-2017 season [^2]. Many of the Warriors' success could be attributed to its amazingly talented players. Some of the most notale players from the 2016-2017 season are Klay Thompson, Draymond Green, Kevin Durant, Stephen Curry, and Andre Iguodala. 
+The Golden State Warriors are known as one of the most succesful teams in the basketball world. Out of the several records that they have made, the most recent and noteable one would have to be during the 2015-2016 season when the Warriors broke the NBA record for most wins in a regular season by winning a total of 73 games with only 9 losses [^1]. Sadly, the Warriors did not win the championship in 2015-2016, but they did win the following 2016-2017 season. Many of the Warriors' success during the season could be attributed to its amazingly talented players. Most notably, Klay Thompson, Draymond Green, Kevin Durant, Stephen Curry, and Andre Iguodala, who were all at one point or another, captains of their team [^2].
   
 ### Background
 
-Basketball is a sport played by two teams of 5. The main goal of the game is get the ball in the opponent’s hoop. By NBA (National Basketball Association) standards, each game is played for 48 minutes split into 4 periods/quaters of 12 minutes. At the end of the game, the team that has scored the most points wins. A player scores a point if he/she puts the ball through the opposition’s hoop. Points can go from 1 to 3. A team scores 3 points if the player makes a shot from behind the three-point line; a team scores 2 points if the player scores before the two-point line. The three-point line is a semi-circle drawn on the court; the arc has a radius of approximately 23 ft. from the middle of the basket[^3]. 
+Basketball is a sport played by two teams of 12, where only 5 players can play at a time. The main goal of the game is get the ball in the opponent’s hoop. By NBA (National Basketball Association) standards, each game is played for 48 minutes split into 4 periods/quaters of 12 minutes. At the end of the game, the team that scored the most points wins. A player scores a point if he puts the ball through the opposition’s hoop. Points can go from one up to three. A team scores one point if a player makes a a successful free throw, two points (called a two pointer) if the player scores before the two-point line, three points (three pointer) if the player makes a shot from behind the three-point line [^3]. The three-point line is a semi-circle drawn on the court; the arc has a radius of approximately 23 ft. from the middle of the basket [^4]. 
 
-Each player on a basketball has a role. For the Warriors, Stephen Curry was the point guard, Kevin Durant and Draymond Green were the power fowards, Andre Iguodala was the small forward, and Klay Thompson was the shooting guard. 
+Each player on a basketball team has a role. For the Warriors, Stephen Curry was the point guard, Kevin Durant and Draymond Green were the power fowards, Andre Iguodala was the small forward, and Klay Thompson was the shooting guard. 
 
 
-The point guard is responsible for dribbling and passing the ball so to both avoid the opponents and to advance up the court. In defensive, the point guard accountable for disrupting the opponents' ball handling. The shooting guard is responsible for most of the shooting. This player should be able to shoot from anywhere on the court. The small forward is similar to the shooting guard in the they are can shoot from anywhere on the court. In addition, the small forward are known to be able to do everything on a basketball court. The power forward is the player who plays close to the basketball hoop and scores the most two pointers[^4].
+The point guard is responsible for dribbling and passing the ball. He must both avoid the opponents and move the ball to the opposite side of the court. In defensive, the point guard is accountable for disrupting the opponents' ball handling. The shooting guard is responsible for most of the shooting. This player should be able to shoot from anywhere on the court. Just like the shooting guard, the small forward must also have the ability to shoot from anywhere on the court, but he should also be able to do everything on a basketball court. Lastly, the power forward is the player who plays close to the basketball hoop and scores the most two pointers [^5].
   
 ### Data
 
-The data for this report is from the 2016-2017 season. Five raw data sets are used in this report, where each set represents a player’s shot statistic. Every row is an attempted shot the player made, accompanied with the period it was attempted in, as well as the minutes and seconds remaining inthe period after the shot. The data sets also include the coordinates where the player made the shot, the type of field goal (2 points or 3 points), the basketball move made, and whether the shot was successful or not. 
+The data for this report is from the 2016-2017 season. Five raw data sets are used in this report, where each set represents a player’s shot statistic. Every row is an attempted shot the player made, accompanied with the period it was attempted in, as well as the minutes and seconds remaining in the period after the shot. The data sets also include the coordinates where the player made the shot, the type of field goal (two pointer or three pointer), the basketball move made, and whether the shot was successful or not. 
 
-A look through each player’s data set shows that not every player attempted the same number of shots, but does more shots mean more points?
+A look through each player’s data sets show that not every player attempted the same number of shots, but does more shots mean more points?
 
 
 ### Analysis
@@ -29,7 +29,7 @@ A look through each player’s data set shows that not every player attempted th
 knitr::include_graphics('../images/gsw-shot-charts.png')
 ```
 
-From the shot charts, it seems that all the players make a wide variety of shots. Out of all five players, Stephen Curry and Klay Thompson shot the most. As the point guard, Curry’s role was to advance the ball pass the opposing defense and across the court, where he would have the perfect opportunity for a scoring a point. As power forwards, both Draymond Green and Kevin Durant did a fair amount of shooting from inside the three-pointer line. However, many of Draymond’s shots tend to be at the three pointer line or very close to the hoop while Kevin Durant shoots at a more variety of distances. While both are power fowards, their play styles are quiet different. The player with the least number of shots is Andre Iguodala, the small forward. The shot chart shows that Iguodala is able to shoot from any distance.
+From the shot charts, all the players made a wide variety of shots. Out of all five players, Stephen Curry and Klay Thompson shot the most, which is reasonable given their positions. As the point guard, Curry’s role was to advance the ball pass the opposing defense and across the court, where he would have the perfect opportunity for a scoring a point. Klay Thompson's role as the shooting guard meant that he would be doing most of the shooting on the team. As power forwards, both Draymond Green and Kevin Durant did a fair amount of shooting from inside the three-pointer line. However, many of Draymond’s shots tend to be at the three pointer line or very close to the hoop while Kevin Durant shoots at a more variety of distances. While both are power fowards, their play styles are quiet different. The player with the least number of shots is Andre Iguodala, the small forward. The shot chart does prove that Iguodala is able to shoot from any distance, just as how a small forward should.
 ```{r echo = FALSE, results = 'hide', message = FALSE}
 library(dplyr)
 library(knitr)
@@ -116,5 +116,6 @@ In conlusion, while some players had more attempted shots than others, more shot
 ### Reference
 [^1]: <https://en.wikipedia.org/wiki/2015%E2%80%9316_Golden_State_Warriors_season>
 [^2]: <https://en.wikipedia.org/wiki/2016%E2%80%9317_Golden_State_Warriors_season>
-[^3]: <http://www.nba.com/analysis/rules_1.html?nav=ArticleList>
-[^4]: <https://www.basketballforcoaches.com/basketball-positions/>
+[^3]: <http://www.rulesofsport.com/sports/basketball.html>
+[^4]: <http://www.nba.com/analysis/rules_1.html?nav=ArticleList>
+[^5]: <https://www.basketballforcoaches.com/basketball-positions/>
