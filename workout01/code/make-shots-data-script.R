@@ -2,7 +2,7 @@
   ## Title: Data Preparation Code
   ## Description: This script organizes the raw data for later analysis
   ## Input(s): raw data of five CSV files (one for each player)
-  ## Output(s): summaries of each five players, all five players, and a csv file containing all the players data (global table)
+  ## Output(s): summaries of each player, summary of all five players, and a csv file containing all the players data (global table)
   ##################################################
 
   ## Section: read data sets
