@@ -5,15 +5,15 @@ March 2, 2019
 
 ### Introduction
 
-The **Golden State Warriors** are known as one of the most successful teams in the basketball world. Out of the several records that they have made, the most recent and notable one would have to be during the 2015-2016 season when the Warriors broke the NBA record for most wins in a regular season by winning a total of 73 games with only 9 losses [1]. Sadly, the Warriors did not win the championship in 2015-2016, but they did win the following 2016-2017 season. Many of the Warriors' success during the season could be attributed to its amazingly talented players. Most notably, **Klay Thompson, Draymond Green, Kevin Durant, Stephen Curry, and Andre Iguodala**, who were all at one point or another, captains of their team [2].
+The **Golden State Warriors** are known as one of the most successful teams in the basketball world, specifically the NBA. Out of the several records that they have made, the most recent and notable one would have to be during the 2015-2016 season when the Warriors broke the NBA record for most wins in a regular season by winning a total of 73 games with only 9 losses [1]. Sadly, the Warriors did not win the championship in 2015-2016, but they did win the following 2016-2017 season. Many of the Warriors' success during the season could be attributed to its amazingly talented players. Most notably, **Klay Thompson, Draymond Green, Kevin Durant, Stephen Curry, and Andre Iguodala**.
 
 ### Background
 
+The Golden State Warriors are an American professional basketball team that participates in the Nation Basketball Association, which is an all men's basketball league. Each year, the Association holds a competition among basketball teams from all over America. NBA players are some of the most paid athletes in the world [2].
+
 Basketball is a sport played by two teams of 12, where only 5 players can play at a time. The main goal of the game is get the ball in the opponent’s hoop. By NBA (National Basketball Association) standards, each game is played for 48 minutes split into 4 periods/quarters of 12 minutes. At the end of the game, the team that scored the most points wins. A player scores a point if he puts the ball through the opposition’s hoop. Points can go from one up to three. A team scores one point if a player makes a a successful free throw, two points (called a two pointer) if the player scores before the two-point line, three points (three pointer) if the player makes a shot from behind the three-point line [3]. The three-point line is a semi-circle drawn on the court; the arc has a radius of approximately 23 ft. from the middle of the basket [4].
 
-Each player on a basketball team has a role. For the Warriors, Stephen Curry was the point guard, Kevin Durant and Draymond Green were the power forwards, Andre Iguodala was the small forward, and Klay Thompson was the shooting guard.
-
-The point guard is responsible for dribbling and passing the ball. He must both avoid the opponents and move the ball to the opposite side of the court. In defensive, the point guard is accountable for disrupting the opponents' ball handling. The shooting guard is responsible for most of the shooting. This player should be able to shoot from anywhere on the court. Just like the shooting guard, the small forward must also have the ability to shoot from anywhere on the court, but he should also be able to do everything on a basketball court. Lastly, the power forward is the player who plays close to the basketball hoop and scores the most two pointers [5].
+Each player on a basketball team has a role. For the Warriors, Stephen Curry was the point guard, Kevin Durant and Draymond Green were the power forwards, Andre Iguodala was the small forward, and Klay Thompson was the shooting guard. The point guard is responsible for dribbling and passing the ball. He must both avoid the opponents and move the ball to the opposite side of the court. In defensive, the point guard is accountable for disrupting the opponents' ball handling. The shooting guard is responsible for most of the shooting. This player should be able to shoot from anywhere on the court. Just like the shooting guard, the small forward must also have the ability to shoot from anywhere on the court, but he should also be able to do everything on a basketball court. Lastly, the power forward is the player who plays close to the basketball hoop and scores the most two pointers [5].
 
 ### Data
 
@@ -75,7 +75,7 @@ Basketball may seem like an offensive sport, but there is more to it than just s
 
 [1] <https://en.wikipedia.org/wiki/2015%E2%80%9316_Golden_State_Warriors_season>
 
-[2] <https://en.wikipedia.org/wiki/2016%E2%80%9317_Golden_State_Warriors_season>
+[2] <https://en.wikipedia.org/wiki/National_Basketball_Association#Championships>
 
 [3] <http://www.rulesofsport.com/sports/basketball.html>
 
@@ -83,4 +83,4 @@ Basketball may seem like an offensive sport, but there is more to it than just s
 
 [5] <https://www.basketballforcoaches.com/basketball-positions/>
 
-[6] <https://en.wikipedia.org/wiki/2016%E2%80%9317_Golden_State_Warriors_season>
+[6] <https://en.wikipedia.org/wiki/National_Basketball_Association#Championships>
