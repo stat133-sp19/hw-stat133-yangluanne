@@ -5,29 +5,29 @@ March 2, 2019
 
 ### Introduction
 
-The Golden State Warriors are known as one of the most succesful teams in the basketball world. Out of the several records that they have made, the most recent and noteable one would have to be during the 2015-2016 season when the Warriors broke the NBA record for most wins in a regular season by winning a total of 73 games with only 9 losses [1]. Sadly, the Warriors did not win the championship in 2015, but they did win the following 2016-2017 season [2]. Many of the Warriors' success could be attributed to its amazingly talented players. Some of the most notale players from the 2016-2017 season are Klay Thompson, Draymond Green, Kevin Durant, Stephen Curry, and Andre Iguodala.
+The **Golden State Warriors** are known as one of the most successful teams in the basketball world. Out of the several records that they have made, the most recent and notable one would have to be during the 2015-2016 season when the Warriors broke the NBA record for most wins in a regular season by winning a total of 73 games with only 9 losses [1]. Sadly, the Warriors did not win the championship in 2015-2016, but they did win the following 2016-2017 season. Many of the Warriors' success during the season could be attributed to its amazingly talented players. Most notably, **Klay Thompson, Draymond Green, Kevin Durant, Stephen Curry, and Andre Iguodala**, who were all at one point or another, captains of their team [2].
 
 ### Background
 
-Basketball is a sport played by two teams of 5. The main goal of the game is get the ball in the opponent’s hoop. By NBA (National Basketball Association) standards, each game is played for 48 minutes split into 4 periods/quaters of 12 minutes. At the end of the game, the team that has scored the most points wins. A player scores a point if he/she puts the ball through the opposition’s hoop. Points can go from 1 to 3. A team scores 3 points if the player makes a shot from behind the three-point line; a team scores 2 points if the player scores before the two-point line. The three-point line is a semi-circle drawn on the court; the arc has a radius of approximately 23 ft. from the middle of the basket[3].
+Basketball is a sport played by two teams of 12, where only 5 players can play at a time. The main goal of the game is get the ball in the opponent’s hoop. By NBA (National Basketball Association) standards, each game is played for 48 minutes split into 4 periods/quarters of 12 minutes. At the end of the game, the team that scored the most points wins. A player scores a point if he puts the ball through the opposition’s hoop. Points can go from one up to three. A team scores one point if a player makes a a successful free throw, two points (called a two pointer) if the player scores before the two-point line, three points (three pointer) if the player makes a shot from behind the three-point line [3]. The three-point line is a semi-circle drawn on the court; the arc has a radius of approximately 23 ft. from the middle of the basket [4].
 
-Each player on a basketball has a role. For the Warriors, Stephen Curry was the point guard, Kevin Durant and Draymond Green were the power fowards, Andre Iguodala was the small forward, and Klay Thompson was the shooting guard.
+Each player on a basketball team has a role. For the Warriors, Stephen Curry was the point guard, Kevin Durant and Draymond Green were the power forwards, Andre Iguodala was the small forward, and Klay Thompson was the shooting guard.
 
-The point guard is responsible for dribbling and passing the ball so to both avoid the opponents and to advance up the court. In defensive, the point guard accountable for disrupting the opponents' ball handling. The shooting guard is responsible for most of the shooting. This player should be able to shoot from anywhere on the court. The small forward is similar to the shooting guard in the they are can shoot from anywhere on the court. In addition, the small forward are known to be able to do everything on a basketball court. The power forward is the player who plays close to the basketball hoop and scores the most two pointers[4].
+The point guard is responsible for dribbling and passing the ball. He must both avoid the opponents and move the ball to the opposite side of the court. In defensive, the point guard is accountable for disrupting the opponents' ball handling. The shooting guard is responsible for most of the shooting. This player should be able to shoot from anywhere on the court. Just like the shooting guard, the small forward must also have the ability to shoot from anywhere on the court, but he should also be able to do everything on a basketball court. Lastly, the power forward is the player who plays close to the basketball hoop and scores the most two pointers [5].
 
 ### Data
 
-The data for this report is from the 2016-2017 season. Five raw data sets are used in this report, where each set represents a player’s shot statistic. Every row is an attempted shot the player made, accompanied with the period it was attempted in, as well as the minutes and seconds remaining inthe period after the shot. The data sets also include the coordinates where the player made the shot, the type of field goal (2 points or 3 points), the basketball move made, and whether the shot was successful or not.
+The data for this report is from the 2016-2017 season. Five raw data sets are used in this report, where each set represents a player’s shot statistic. Every row is an attempted shot the player made, accompanied with the period it was attempted in, as well as the minutes and seconds remaining in the period after the shot. The data sets also include the coordinates where the player made the shot, the type of field goal (two pointer or three pointer), the basketball move made, and whether the shot was successful or not.
 
-A look through each player’s data set shows that not every player attempted the same number of shots, but does more shots mean more points?
+A look through each player’s data sets shows that not every player attempted the same number of shots, but does more shots mean more points? In other words, does attempting more shots grantee more shots made?
 
 ### Analysis
 
 <img src="../images/gsw-shot-charts.png" width="80%" />
 
-From the shot charts, it seems that all the players make a wide variety of shots. Out of all five players, Stephen Curry and Klay Thompson shot the most. As the point guard, Curry’s role was to advance the ball pass the opposing defense and across the court, where he would have the perfect opportunity for a scoring a point. As power forwards, both Draymond Green and Kevin Durant did a fair amount of shooting from inside the three-pointer line. However, many of Draymond’s shots tend to be at the three pointer line or very close to the hoop while Kevin Durant shoots at a more variety of distances. While both are power fowards, their play styles are quiet different. The player with the least number of shots is Andre Iguodala, the small forward. The shot chart shows that Iguodala is able to shoot from any distance.
+From the shot charts, all the players made a wide variety of shots. Out of all five players, Stephen Curry and Klay Thompson shot the most, which is reasonable given their positions. As the point guard, Curry’s role was to advance the ball pass the opposing defense and across the court, where he would have the perfect opportunity for a scoring a point. Klay Thompson's role as the shooting guard meant that he would be doing most of the shooting on the team. As power forwards, both Draymond Green and Kevin Durant did a fair amount of shooting from inside the three-pointer line. However, many of Draymond’s shots tend to be at the three pointer line or very close to the hoop while Kevin Durant shoots at a more variety of distances. While both are power forwards, their play styles are quiet different. The player with the least number of shots is Andre Iguodala, but the shot chart does support the assumption that Iguodala, as the small forward, is able to shoot from any distance.
 
-At this point, it is easy to conclude that Curry, Thompson, and Durant were the better shooters for reasons such as their positions allowed them to get more shots or that they are just more skilled in shooting. However, a closer look at the numbers gives a different perspective.
+At this point, it is easy to conclude that Curry, Thompson, and Durant were the better shooters. There can be many reasons for this. One is that their positions allowed them to get more shots than others. Another is that they are just more skilled in shooting. However, a closer look at the numbers gives a different perspective.
 
 #### Effective Shooting % by Players
 
@@ -39,7 +39,7 @@ At this point, it is easy to conclude that Curry, Thompson, and Durant were the 
 | Stephen Curry  |   1250|   584|    46.72000|
 | Draymond Green |    578|   245|    42.38754|
 
-Out of the total 1250 shots, Curry made approximately 46.72% of the shots. Klay Thompson was not far behind Curry. During the season, he made a total of 1220 shots with a 47.13% success rate. This makes sense because as the shooting guard, Thompson’s most important job is to score points. Draymond made 578 shots with an accuracy of 42.39% and Durant made 915 shots with an accuracy of 54.10%. Second only to Durant, Iguodala scores atleast one point 51.75% of the times he attempts a shot. Even though Curry and Thompson appeared to have contributed the most to the team, in reality, neither of them had a shot percentage over 50%. While Iguodala, who did not shoot as often during the season, had a higher accuracy than both Curry and Thompson.
+Out of a total of 1250 shots, Curry made approximately 46.72% of the shots. Klay Thompson was not far behind Curry. During the season, he made a total of 1220 shots with a 47.13% success rate. Green made 578 shots with an accuracy of 42.39% and Durant made 915 shots with an accuracy of 54.10%. Second only to Durant, Iguodala scored 51.75% of the his shots. Even though Curry and Thompson appeared to have contributed the most to the team, in reality, neither of them had a shot percentage over 50%. While Iguodala, who did not shoot as often during the season, had a higher accuracy than both Curry and Thompson.
 
 #### 2PT Effective Shooting % by Players
 
@@ -51,7 +51,7 @@ Out of the total 1250 shots, Curry made approximately 46.72% of the shots. Klay 
 | Klay Thompson  |    640|   329|    51.40625|
 | Draymond Green |    346|   171|    49.42197|
 
-Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots.
+Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots. Green had the lowest shot percentage of 49.42%.
 
 #### 3PT Effective Shooting % by Players
 
@@ -63,11 +63,13 @@ Looking the data for 2 pointers, Durant and Thompson attempted the most shots. D
 | Andre Iguodala |    161|    58|    36.02484|
 | Draymond Green |    232|    74|    31.89655|
 
-Similarly, the data for 3 pointers shows that Curry have the most attempted shots, followed closely by Thompson. On top of most total shots, both players also have the highest shot percentages. Thompson with a percent of 42.41% out of 580 total shots and Curry with a percent of 40.76% out of 687 total shots. Iguodala had the lowest number of shots, but Green had the lowest shot percentage of 31.89%.
+The data for 3 pointers shows that Curry have the most attempted shots, followed closely by Thompson. On top of most total shots, both players also have the highest shot percentages. Thompson with a percent of 42.41% out of 580 total shots and Curry with a percent of 40.76% out of 687 total shots. Iguodala had the lowest total number of shots, but Green, once again, had the lowest shot percentage of 31.89%.
 
 ### Conclusion
 
-In conlusion, while some players had more attempted shots than others, more shots do not more shots made. Andre Iguodala is an ideal example of this. He had the least number of shots but had a higher shot made percentage than players such as Stephen Curry, who took and made the most shots. This may also be due to each player’s skill level. Draymond Green threw more shots than Iguodala, but had the lowest overall accuracry among all the five players.
+In conclusion, while some players had more attempted shots than others, more shots do not lead to more shots made. Andre Iguodala is an ideal example of this. He had the least number of shots but had a higher shot made percentage than players such as Stephen Curry, who had the highest number of shots and shots made. Another example is Draymond Green, who threw more shots than Iguodala, but had the lowest overall accuracy among all the five players. However, this does not mean Draymond Green played any less of a role in his teams success during the 2016-2017 season. Green was in fact given the Defensive Player of the Year Award at the NBA Awards [6].
+
+Basketball may seem like an offensive sport, but there is more to it than just scoring points. Each player has a role in a basketball team. With Green as defense, Curry and Thompson as three point shooters, and Durant and Iguodala as two point shooters, it is no wonder the Warriors is one of the most successful basketball team in NBA history.
 
 ### Reference
 
@@ -75,6 +77,10 @@ In conlusion, while some players had more attempted shots than others, more shot
 
 [2] <https://en.wikipedia.org/wiki/2016%E2%80%9317_Golden_State_Warriors_season>
 
-[3] <http://www.nba.com/analysis/rules_1.html?nav=ArticleList>
+[3] <http://www.rulesofsport.com/sports/basketball.html>
 
-[4] <https://www.basketballforcoaches.com/basketball-positions/>
+[4] <http://www.nba.com/analysis/rules_1.html?nav=ArticleList>
+
+[5] <https://www.basketballforcoaches.com/basketball-positions/>
+
+[6] <https://en.wikipedia.org/wiki/2016%E2%80%9317_Golden_State_Warriors_season>
