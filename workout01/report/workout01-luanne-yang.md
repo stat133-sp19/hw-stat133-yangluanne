@@ -9,7 +9,11 @@ The **Golden State Warriors** are known as one of the most successful teams in t
 
 ### Background
 
-The Golden State Warriors are an American professional basketball team that participates in the Nation Basketball Association, which is an all men's basketball league. Each year, the Association holds a competition among basketball teams from all over America. NBA players are some of the most paid athletes in the world [2].
+The Golden State Warriors are an American professional basketball team that participates in the Nation Basketball Association, which is an all men's basketball league. Each year, the Association holds a championship among basketball teams from all over America. NBA players are some of the most paid athletes in the world [2].
+
+![The Golden State Warriors](https://onairstory.com/wp-content/uploads/2019/03/Golden-State-Warriors-Tickets.jpg)
+
+------------------------------------------------------------------------
 
 Basketball is a sport played by two teams of 12, where only 5 players can play at a time. The main goal of the game is get the ball in the opponent’s hoop. By NBA (National Basketball Association) standards, each game is played for 48 minutes split into 4 periods/quarters of 12 minutes. At the end of the game, the team that scored the most points wins. A player scores a point if he puts the ball through the opposition’s hoop. Points can go from one up to three. A team scores one point if a player makes a a successful free throw, two points (called a two pointer) if the player scores before the two-point line, three points (three pointer) if the player makes a shot from behind the three-point line [3]. The three-point line is a semi-circle drawn on the court; the arc has a radius of approximately 23 ft. from the middle of the basket [4].
 
