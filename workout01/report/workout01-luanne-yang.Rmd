@@ -120,7 +120,7 @@ The table below displays the two point field goal effective shooting percentage 
 kable(PT2)
 ```  
 
-Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots. Curry and Thompson were in the middle, both with over 50% shot accuracy. Green had the lowest shot percentage of 49.42%.
+Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots. Curry and Thompson were in the middle, both with over 50% shot accuracy. Green had the lowest shot percentage of 49.42%. 
 
 The table below displays the three point field goal effective shooting percentage of all five players. Once again, it includes the same labels as the overall effective shooting table.
 
@@ -139,10 +139,9 @@ In conclusion, while some players had more attempted shots than others, more sho
 Basketball may seem like an offensive sport, but there is more to it than just scoring points. Each player has a role in a basketball team. With Green as defense, Curry and Thompson as three point shooters, and Durant and Iguodala as two point shooters, it is no wonder the Warriors is one of the most successful basketball team in NBA history.
 
 
-
 ### Reference
-[^1]: <https://en.wikipedia.org/wiki/2015%E2%80%9316_Golden_State_Warriors_season>
-[^2]: <https://en.wikipedia.org/wiki/National_Basketball_Association#Championships>
-[^3]: <http://www.rulesofsport.com/sports/basketball.html>
-[^4]: <http://www.nba.com/analysis/rules_1.html?nav=ArticleList>
-[^5]: <https://www.basketballforcoaches.com/basketball-positions/>
+1. https://en.wikipedia.org/wiki/2015%E2%80%9316_Golden_State_Warriors_season
+2. https://en.wikipedia.org/wiki/National_Basketball_Association#Championships
+3. http://www.rulesofsport.com/sports/basketball.html
+4. http://www.nba.com/analysis/rules_1.html?nav=ArticleList
+5. https://www.basketballforcoaches.com/basketball-positions/

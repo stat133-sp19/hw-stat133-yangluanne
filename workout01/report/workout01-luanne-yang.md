@@ -80,3 +80,9 @@ In conclusion, while some players had more attempted shots than others, more sho
 Basketball may seem like an offensive sport, but there is more to it than just scoring points. Each player has a role in a basketball team. With Green as defense, Curry and Thompson as three point shooters, and Durant and Iguodala as two point shooters, it is no wonder the Warriors is one of the most successful basketball team in NBA history.
 
 ### Reference
+
+1.  <https://en.wikipedia.org/wiki/2015%E2%80%9316_Golden_State_Warriors_season>
+2.  <https://en.wikipedia.org/wiki/National_Basketball_Association#Championships>
+3.  <http://www.rulesofsport.com/sports/basketball.html>
+4.  <http://www.nba.com/analysis/rules_1.html?nav=ArticleList>
+5.  <https://www.basketballforcoaches.com/basketball-positions/>
