@@ -35,7 +35,9 @@ From the shot charts, all the players made a wide variety of shots. Out of all f
 
 At this point, it is easy to conclude that Curry, Thompson, and Durant were the better shooters. If they are shooting most of the times, then that means their teammates know that they have a higher chance at making the shot. There can be many reasons for this. One is that their positions allowed them to get more shots than others. Another may be that they are just more skilled in shooting. However, a closer look at the numbers gives a different perspective.
 
-The table below displays the overall (including two point field goals and three point field goals) effective shooting percentage of all five players. It includes he total number of shots made by each player (labeled "TotalShots"), the number of shots made (labeled "ShotsMade"), and a percentage of shots made out of the total shots (labeled "PercentMade"). \#\#\#\# Effective Shooting % by Players
+The table below displays the overall (including two point field goals and three point field goals) effective shooting percentage of all five players. It includes the total number of shots made by each player (labeled "TotalShots"), the number of shots made (labeled "ShotsMade"), and a percentage of shots made out of the total shots (labeled "PercentMade").
+
+#### Effective Shooting % by Players
 
 | Name           |  TotalShots|  ShotsMade|  PercentMade|
 |:---------------|-----------:|----------:|------------:|
@@ -45,9 +47,11 @@ The table below displays the overall (including two point field goals and three 
 | Stephen Curry  |        1250|        584|     46.72000|
 | Draymond Green |         578|        245|     42.38754|
 
-Out of a total of 1250 shots, Curry made approximately 46.72% of the shots. Klay Thompson was not far behind Curry. During the season, he made a total of 1220 shots with a 47.13% success rate. Green made 578 shots with an accuracy of 42.39% and Durant made 915 shots with an accuracy of 54.10%. Second only to Durant, Iguodala scored 51.75% of the his shots. Even though Curry and Thompson appeared to have contributed the most to the team, in reality, neither of them had a shot percentage over 50%. While Iguodala, who did not shoot as often during the season, had a higher accuracy than both Curry and Thompson.
+Out of a total of 1250 shots, Curry made approximately 46.72% of the shots. Klay Thompson was not far behind Curry. During the season, he made a total of 1220 shots with a 47.13% success rate. Green made 578 shots with an accuracy of 42.39% and Durant made 915 shots with an accuracy of 54.10%. Second only to Durant, Iguodala scored 51.75% of the his shots. Even though Curry and Thompson appeared to have contributed the most to the team, in reality, neither of them had a shot percentage over 50%. While Iguodala, who did not shoot as often during the season, had a higher accuracy than both Curry and Thompson. From this data, it is clear that more shots do not lead to more shots made, but a player's shot accuracy can also be determined by the shot type they were aiming for. There are two shot types, the two point field goal and the three point field goal.
 
-The table below displays the two point field goal effective shooting percentage of all five players. It includes the same labels as the overall effective shooting table. \#\#\#\# 2PT Effective Shooting % by Players
+The table below displays the two point field goal effective shooting percentage of all five players. It includes the same labels as the overall effective shooting table.
+
+#### 2PT Effective Shooting % by Players
 
 | Name           |  TotalShots|  ShotsMade|  PercentMade|
 |:---------------|-----------:|----------:|------------:|
@@ -57,7 +61,7 @@ The table below displays the two point field goal effective shooting percentage 
 | Klay Thompson  |         640|        329|     51.40625|
 | Draymond Green |         346|        171|     49.42197|
 
-Looking the data for 2 pointers, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of 2 pointers, but the highest shot percentage of 63.81% out of 210 shots. Curry and Thompson were in the middle, both with over 50% shot accuracy. Green had the lowest shot percentage of 49.42%.
+Looking at the data for two point field goal, Durant and Thompson attempted the most shots. Durant threw a total of 643 shots, making 60.65% of the shots. Thompson made 51.40% of his total 640 shots. Iguodala had the least amount of two point field goals, but the highest shot percentage of 63.81% out of 210 shots. Curry and Thompson were in the middle, both with over 50% shot accuracy. Green had the lowest shot percentage of 49.42%.
 
 The table below displays the three point field goal effective shooting percentage of all five players. Once again, it includes the same labels as the overall effective shooting table.
 
@@ -71,7 +75,21 @@ The table below displays the three point field goal effective shooting percentag
 | Andre Iguodala |         161|         58|     36.02484|
 | Draymond Green |         232|         74|     31.89655|
 
-The data for 3 pointers shows that Curry have the most attempted shots, followed closely by Thompson. On top of having the most total shots, both players also had the highest shot percentages. Thompson with a percent of 42.41% out of 580 total shots and Curry with a percent of 40.76% out of 687 total shots. Iguodala had the lowest total number of shots, but Green, once again, had the lowest shot percentage of 31.89%.
+The data for three point field goals shows that Curry had the most attempted shots, followed closely by Thompson. On top of having the most total shots, both players also had the highest shot percentages. Thompson with a percent of 42.41% out of 580 total shots and Curry with a percent of 40.76% out of 687 total shots. Iguodala had the lowest total number of shots, but Green, once again, had the lowest shot percentage of 31.89%. So far, the two field goal effective shooting percentage tables have provided a clear distinction between players based on their shooting specialties. Iguodala and Durant are good at two point field goals. On the other hand, Thompson and Curry specialize in three point field goals. The next table gives further evidence of this.
+
+The table below that displays the percentage of two point field goals (labeled "TwoPoint") and three point field goals (labeled "ThreePoint") from each player's total number of shots. In addition, it also lays out the percentage of each shot type made out of the total number of shots (labeled "TwoPointMade" and "ThreePointMade").
+
+#### Shot Type Total and Made % by Players
+
+| Name           |  TwoPoint|  TwoPointMade|  ThreePoint|  ThreePointMade|
+|:---------------|---------:|-------------:|-----------:|---------------:|
+| Andre Iguodala |  56.60377|      69.79167|    43.39623|        30.20833|
+| Draymond Green |  59.86159|      69.79592|    40.13841|        30.20408|
+| Kevin Durant   |  70.27322|      78.78788|    29.72678|        21.21212|
+| Klay Thompson  |  52.45902|      57.21739|    47.54098|        42.78261|
+| Stephen Curry  |  45.04000|      52.05479|    54.96000|        47.94521|
+
+From the table, Curry clearly favored the three point field goals. He attempted about 9% more three point field goals than two point field goal and almost 50% of his successful shots were three point field goals. Other than Curry, all other players predominantly stuck with the two point field goals. Thompson is the closest to Curry. Nearly 50% of his total shots were made behind the three point line. Durant had an overwhelming bias for two point field goals. 70% of his total shots and 78% of his total shots made were within the three point line. This makes sense because Durant was a power forward, a player that sticks close to the hoop. Therefore, it stands to reason that he would make be making more shots from a closer distance to the hoop. Iguodala and Green also shot mostly two point field goals.
 
 ### Conclusion
 
