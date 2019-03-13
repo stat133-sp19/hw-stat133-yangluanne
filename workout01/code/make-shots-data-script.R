@@ -2,7 +2,19 @@
   ## Title: Data Preparation Code
   ## Description: This script organizes the raw data for later analysis
   ## Input(s): raw data of five CSV files (one for each player)
+  ##              ../data/andre-iguodala.csv
+  ##              ../data/draymond-green.csv
+  ##              ../data/kevin-durant.csv
+  ##              ../data/klay-thompson.csv
+  ##              ../data/stephen-curry.csv
   ## Output(s): summaries of each player, summary of all five players, and a csv file containing all the players data (global table)
+  ##              ..data/shots-data.csv
+  ##              ..output/shots-data-summary.txt
+  ##              ..output/andre-iguodala-summary.txt
+  ##              ..output/draymond-green-summary.txt
+  ##              ..output/kevin-durant-summary.txt
+  ##              ..output/klay-thompson-summary.txt
+  ##              ..output/stephen-curry-summary.txt
   ##################################################
 
   ## Section: read data sets

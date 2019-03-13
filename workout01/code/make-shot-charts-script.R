@@ -1,8 +1,21 @@
   ##################################################
   ## Title: Short Charts Code
   ## Description: This script uses raw data of each player to make charts labeling where each player made a shot
-  ## Input(s): raw data of five CSV files (one for each player)
-  ## Output(s): creates shot charts
+  ## Input(s): raw data of five CSV files (one for each player) and an image of the NBA court
+  ##              ../images/nba-court.jpg
+  ##              ../data/andre-iguodala.csv
+  ##              ../data/draymond-green.csv
+  ##              ../data/kevin-durant.csv
+  ##              ../data/klay-thompson.csv
+  ##              ../data/stephen-curry.csv
+  ## Output(s): creates shot charts for each player
+  ##              ../images/gsw-shot-charts.pdf
+  ##              ../images/gsw-shot-charts.png
+  ##              ../images/andre-iguodala-shot-chart.pdf
+  ##              ../images/draymond-green-shot-chart.pdf
+  ##              ../images/kevin-durant-shot-chart.pdf
+  ##              ../images/klay-thompson-shot-chart.pdf
+  ##              ../images/stephen-curry-shot-chart.pdf
   ##################################################
   
   ## Section: short chars of each player
@@ -88,55 +101,6 @@
     ggtitle('Shot Chart: GSW (2016 season)') + 
     theme_minimal() + 
     facet_wrap(~ name)
-  dev.off()
-  
-  ## Section: exta plots
-  ##################################################
-  
-  PT2_ <- melt(PT2[,c('name', 'total', 'made')], id.vars = 1)
-  PT3_ <- melt(PT3[,c('name', 'total', 'made')], id.vars = 1)
-  PT_ <- melt(PT[,c('name', 'total', 'made')], id.vars = 1)
-  
-  pdf('../images/2Pointers.png', width = 8, height = 7)
-  ggplot(PT2_, aes(x = name, y = value)) + 
-    geom_bar(aes(fill = variable), stat = 'identity', position = 'dodge') + 
-    ggtitle('2 Pointers Scored by Each Player') + ylab('Points') + 
-    coord_flip()
-  dev.off()
-  
-  pdf('../images/3Pointers.png', width = 8, height = 7)
-  ggplot(PT3_, aes(x = name, y = value)) + 
-    geom_bar(aes(fill = variable), stat = 'identity', position = 'dodge') + 
-    ggtitle('3 Pointers Scored by Each Player') + ylab('Points') + 
-    coord_flip()
-  dev.off()
-  
-  pdf('../images/Points.png', width = 8, height = 7)
-  ggplot(PT_, aes(x = name, y = value)) + 
-    geom_bar(aes(fill = variable), stat = 'identity', position = 'dodge') + 
-    ggtitle('All Points Scored by Each Player') + ylab('Points') + 
-    coord_flip()
-  dev.off()
-  
-  png('../images/2Pointers.png', width = 8, height = 7, units = 'in', res = 120)
-  ggplot(PT2_, aes(x = name, y = value)) + 
-    geom_bar(aes(fill = variable), stat = 'identity', position = 'dodge') + 
-    ggtitle('2 Pointers Scored by Each Player') + ylab('Points') + 
-    coord_flip()
-  dev.off()
-  
-  png('../images/3Pointers.png', width = 8, height = 7, units = 'in', res = 120)
-  ggplot(PT3_, aes(x = name, y = value)) + 
-    geom_bar(aes(fill = variable), stat = 'identity', position = 'dodge') + 
-    ggtitle('3 Pointers Scored by Each Player') + ylab('Points') + 
-    coord_flip()
-  dev.off()
-  
-  png('../images/Points.png', width = 8, height = 7, units = 'in', res = 120)
-  ggplot(PT_, aes(x = name, y = value)) + 
-    geom_bar(aes(fill = variable), stat = 'identity', position = 'dodge') + 
-    ggtitle('All Points Scored by Each Player') + ylab('Points') + 
-    coord_flip()
   dev.off()
   
   
