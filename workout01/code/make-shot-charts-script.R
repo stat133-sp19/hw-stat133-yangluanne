@@ -18,7 +18,7 @@
   ##              ../images/stephen-curry-shot-chart.pdf
   ##################################################
   
-  ## Section: short chars of each player
+  ## Section: shot charts of each player
   ##################################################
   library(ggplot2)
   library(grid)
