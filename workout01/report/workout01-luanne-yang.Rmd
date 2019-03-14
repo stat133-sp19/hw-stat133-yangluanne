@@ -25,7 +25,9 @@ Each player on a basketball team has a role. For the Warriors during 2016-2017, 
 
 The data for this report are five raw data sets from the Warriors' 2016-2017 season. Each set represents a player’s shot statistic. Every row is an attempted shot the player made, accompanied with the period it was attempted in, as well as the minutes and seconds remaining in the period after the shot. The data sets also include the coordinates where the player made the shot, the type of field goal (two pointer or three pointer), the basketball move made, and whether the shot was successful or not. 
 
-A look through each player’s data sets shows that not every player attempted the same number of shots, but does more shots make a player more effective in the team? Is a player's contribution to the team success dependent on the number of shots they make?
+
+### Motivation
+A look through each player’s data sets shows that not every player attempted the same number of shots, but does more shots mean more shots made? Is a player's contribution to the team success dependent on the number of shots they make?
 
 
 ### Analysis
@@ -143,7 +145,7 @@ kable(PT3)
 
 The data for three point field goals shows that Curry had the most attempted shots, followed closely by Thompson. On top of having the most total shots, both players also had the highest shot percentages. Thompson with an accuracy of 42.41% made out of 580 total shots and Curry with an accuracy of 40.76% made out of 687 total shots. Iguodala had the lowest total number of shots, but Green, once again, had the lowest shot percentage of 31.89%. So far, the two field goal effective shooting percentage tables have provided a distinction between players based on their shooting specialties. Iguodala and Durant were good at two point field goals, while Thompson and Curry specialized in three point field goals. The following table gives further evidence of this.
 
-The table below that displays the percentage of two point field goals (labeled "TwoPoint") and three point field goals (labeled "ThreePoint") from each player's total number of shots. In addition, it also lays out the percentage of each shot type made out of the total number of shots (labeled "TwoPointMade" and "ThreePointMade").  
+The table below that displays the percentage of two point field goals (labeled "TwoPoint") and three point field goals (labeled "ThreePoint") from each player's total number of shots. In addition, it also lays out the percentage of each shot type made out of the total number of shots for each player (labeled "TwoPointMade" and "ThreePointMade").  
 
 #### Shot Type Total and Made % by Players
 ```{r echo = FALSE}
