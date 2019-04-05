@@ -17,31 +17,30 @@ ui <- fluidPage(
    titlePanel("Saving/Investing Scenarios"),
    
    # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
-         sliderInput("format", "Initial Amount",
+   fluidRow(
+         column(4, sliderInput("format", "Initial Amount",
                      min = 1, max = 100000, step = 500,
                      value = 1000, pre = '$', 
                      sep = ','),
       
-         sliderInput("format", "Annual Contribution",
+                    sliderInput("format", "Annual Contribution",
                      min = 0, max =50000, step = 500,
                      value = 2000, pre = '$',
-                     sep = ','),
+                     sep = ',')),
          
-         sliderInput("format", "Return Rate",
+         column(4, sliderInput("format", "Return Rate (in %)",
                      min = 0, max = 20, step = 0.1,
                      value = 5, post = '%'),
          
-         sliderInput("format", "Growth Rate",
+                    sliderInput("format", "Growth Rate (in %)",
                      min = 0, max = 20, step = 0.1,
-                     value = 2, post = '%'),
+                     value = 2, post = '%')), 
          
-         sliderInput("integer", "Years",
+         column(4, sliderInput("integer", "Years",
                      min = 0, max = 50, step = 1,
                      value = 20),
          
-         selectInput("select", "Facet?", choices = c('No', 'Yes'))
+                    selectInput("select", "Facet?", choices = c('No', 'Yes')))
          
          ),
       
@@ -50,7 +49,7 @@ ui <- fluidPage(
          plotOutput("distPlot")
       )
    )
-)
+
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
