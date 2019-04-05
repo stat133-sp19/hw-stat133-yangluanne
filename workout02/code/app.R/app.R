@@ -8,22 +8,42 @@
 #
 
 library(shiny)
+library(ggplot2)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
-   titlePanel("Old Faithful Geyser Data"),
+   titlePanel("Saving/Investing Scenarios"),
    
    # Sidebar with a slider input for number of bins 
    sidebarLayout(
       sidebarPanel(
-         sliderInput("bins",
-                     "Number of bins:",
-                     min = 1,
-                     max = 50,
-                     value = 30)
-      ),
+         sliderInput("format", "Initial Amount",
+                     min = 1, max = 100000, step = 500,
+                     value = 1000, pre = '$', 
+                     sep = ','),
+      
+         sliderInput("format", "Annual Contribution",
+                     min = 0, max =50000, step = 500,
+                     value = 2000, pre = '$',
+                     sep = ','),
+         
+         sliderInput("format", "Return Rate",
+                     min = 0, max = 20, step = 0.1,
+                     value = 5, post = '%'),
+         
+         sliderInput("format", "Growth Rate",
+                     min = 0, max = 20, step = 0.1,
+                     value = 2, post = '%'),
+         
+         sliderInput("integer", "Years",
+                     min = 0, max = 50, step = 1,
+                     value = 20),
+         
+         selectInput("select", "Facet?", choices = c('No', 'Yes'))
+         
+         ),
       
       # Show a plot of the generated distribution
       mainPanel(
