@@ -1,1 +1,1 @@
-
+The purpose of this assignment is to create a shiny app that allows you to visualize-in an interactive way-some of the saving/investing scenarios. These scenarios include the future value of an investment without any additional contributions, with annuity, and with growing annuity.
