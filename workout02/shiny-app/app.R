@@ -1,11 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
 
 library(shiny)
 library(ggplot2)
@@ -24,13 +16,11 @@ growing_annuity <- function(contrib, rate, growth, years) {
 }
 
 
-# Define UI for application that draws a histogram
 ui <- fluidPage(
   
-  # Application title
-  titlePanel("Saving/Investing Scenarios"),
   
-  # Sidebar with a slider input for number of bins 
+  titlePanel("Saving/Investing Scenarios"),
+   
   fluidRow(
     column(4, sliderInput(inputId = "init", "Initial Amount",
                           min = 1, max = 100000, step = 500,
@@ -58,9 +48,6 @@ ui <- fluidPage(
     
   ),
   
-  # Show a plot of the generated distribution
-  #mainPanel(
-  
   h4("Timelines"),
   plotOutput(outputId = "plot", height = 300),
   h4("Balances"),
@@ -68,7 +55,7 @@ ui <- fluidPage(
 )
 
 
-# Define server logic required to draw a histogram
+
 server <- function(input, output) {
   
   modality <- reactive({
@@ -92,8 +79,6 @@ server <- function(input, output) {
   })
   
   output$plot <- renderPlot({
-    # generate bins based on input$bins from ui.R
-    #modalities <- modality(input$init, input$return, input$growth, input$years, input$annual, FALSE)
     
     tab <- melt(modality(), id.vars="year")
     
@@ -113,12 +98,10 @@ server <- function(input, output) {
   })
   
   output$table <- renderTable({
-    
-    #modality(input$init, input$return, input$growth, input$years, input$annual)
     modality()
   })
 }
 
-# Run the application 
+
 shinyApp(ui = ui, server = server)
 
