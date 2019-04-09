@@ -1,0 +1,12 @@
+name: shiny-app
+title: shiny-app
+username:
+account: yangluanne
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 851367
+bundleId: 1998607
+url: https://yangluanne.shinyapps.io/shiny-app/
+when: 1554837236.99224
+asMultiple: FALSE
+asStatic: FALSE
