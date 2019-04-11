@@ -3,14 +3,33 @@ library(shiny)
 library(ggplot2)
 library(reshape2)
 
+#' @title future_value
+#' @description computes the future value of an investment
+#' @param amount initial invested amount; numeric vector
+#' @param rate annual rate of return; numeric vector
+#' @param years number of years; numeric vector
+#' @return future value of an investment
 future_value <- function(amount, rate, years) {
   amount * (1 + rate)^years
 }
 
+#' @title annuity
+#' @description computes the future value of annuity
+#' @param contrib contributed amount; numeric vector
+#' @param rate annual rate of return; numeric vector
+#' @param years number of years; numeric vector
+#' @return future value of annuity
 annuity <- function(contrib, rate, years) {
   contrib * (((1 + rate)^years - 1) / rate)
 }
 
+#' @title growing_annuity
+#' @description computes the future value of growing annuity
+#' @param contrib contributed amount; numeric vector
+#' @param rate annual rate of return; numeric vector
+#' @param growth annual growth rate; numeric vector
+#' @param years number of years; numeric vector
+#' @return future value of growing annuity
 growing_annuity <- function(contrib, rate, growth, years) {
   contrib * (((1 + rate)^years - (1 + growth)^years) / (rate - growth))
 }
