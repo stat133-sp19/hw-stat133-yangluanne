@@ -86,7 +86,7 @@ server <- function(input, output) {
       
       for (i in year) {
         no_contrib <- c(no_contrib, future_value(input$init, input$return / 100, i))
-        fixed_contrib <- c(fixed_contrib, future_value(input$init, input$return / 100, i) + annuity(input$init, input$return / 100, i))
+        fixed_contrib <- c(fixed_contrib, future_value(input$init, input$return / 100, i) + annuity(input$annual, input$return / 100, i))
         growing_contrib <- c(growing_contrib, future_value(input$init, input$return / 100, i) + growing_annuity(input$annual, input$return / 100, input$growth / 100, i))
       }
       
