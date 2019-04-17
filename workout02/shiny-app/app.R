@@ -67,10 +67,11 @@ ui <- fluidPage(
     
   ),
   
+  hr(),
   h4("Timelines"),
   plotOutput(outputId = "plot", height = 300),
   h4("Balances"),
-  tableOutput(outputId = "table")
+  verbatimTextOutput(outputId = "table")
 )
 
 
@@ -116,7 +117,7 @@ server <- function(input, output) {
     
   })
   
-  output$table <- renderTable({
+  output$table <- renderPrint({
     modality()
   })
 }
