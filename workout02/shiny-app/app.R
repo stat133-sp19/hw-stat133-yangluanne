@@ -42,7 +42,7 @@ ui <- fluidPage(
    
   fluidRow(
     column(4, sliderInput(inputId = "init", "Initial Amount",
-                          min = 1, max = 100000, step = 500,
+                          min = 0, max = 100000, step = 500,
                           value = 1000, pre = '$', 
                           sep = ','),
            

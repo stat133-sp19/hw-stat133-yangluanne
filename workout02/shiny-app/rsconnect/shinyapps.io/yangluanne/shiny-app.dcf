@@ -5,8 +5,8 @@ account: yangluanne
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 851367
-bundleId: 2019338
+bundleId: 2020484
 url: https://yangluanne.shinyapps.io/shiny-app/
-when: 1555529115.08128
+when: 1555565274.10882
 asMultiple: FALSE
 asStatic: FALSE
