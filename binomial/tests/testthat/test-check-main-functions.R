@@ -26,14 +26,14 @@ test_that("bin_probability errors correctly", {
 })
 
 test_that("bin_distribution works as expected",{
-  expect_equal(class(bin_distribution(trials = 5, prob = 0.5)), c('bindis', 'data.frame'))
+  expect_is(bin_distribution(trials = 5, prob = 0.5), c('bindis', 'data.frame'))
   expect_length(bin_distribution(trials = 5, prob = 0.5), 2)
   expect_length(bin_distribution(trials = 5, prob = 0.5)[[1]], 6)
   expect_equal(bin_distribution(trials = 5, prob = 0.5)[[2]][1], 0.03125)
 })
 
 test_that("bin_cumulative works as expected", {
-  expect_equal(class(bin_cumulative(trials = 5, prob = 0.5)), c('bincum', 'data.frame'))
+  expect_is(bin_cumulative(trials = 5, prob = 0.5), c('bincum', 'data.frame'))
   expect_length(bin_cumulative(trials = 5, prob = 0.5), 3)
   expect_length(bin_cumulative(trials = 5, prob = 0.5)[[1]], 6)
   expect_equal(bin_cumulative(trials = 5, prob = 0.5)[[2]][1], bin_cumulative(trials = 5, prob = 0.5)[[3]][1])
