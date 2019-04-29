@@ -72,8 +72,7 @@ plot.bindis <- function(x, ...) {
 }
 
 # barplot(x$Success, x$probability, names.arg = x$Success,
-#         main = 'Probability Distribution'),
-# xlab = 'Success', ylab = 'Probability')
+#         main = 'Probability Distribution'), xlab = 'Success', ylab = 'Probability')
 
 #' @title bin_cumulative
 #' @description caculates the cumulated probability for each additional trial
@@ -118,6 +117,7 @@ plot.bincum <- function(x, ...) {
 #'
 #' @examples
 #' var <- bin_variable(trials = 5, prob = 0.5)
+#' var
 #'
 #' summary(var)
 bin_variable <- function(trials, prob) {
