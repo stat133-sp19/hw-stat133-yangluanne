@@ -17,7 +17,19 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of the `"binomial"` package is to provide functions for calulating the properties of the binomial random variable, including probabilities, probability distribution, expected value, variance, etc.
+The goal of the `"binomial"` package is to provide functions for calulating the properties of the binomial random variable, including:  
+- `bin_variable()` creates a binomial variable when given `n` trials and `p` probability  
+
+- `bin_probability()` caculates the probability of getting `k` successes out of `n` trials with a probability `p`  
+
+- `bin_distribution()` outputs a data frame of the binomial distribution of `n` trials given a probability of `p`  
+
+- `bin_cumulative()` outputs a data frame of cumulative binomial distribution given a `n` trials and a probability of `p`  
+
+- `bin_mode()`, `bin_mean()`, `bin_variance()`, `bin_skewness()`, `bin_kurtosis()` are summary measures
+
+
+
 
 ## Installation
 
