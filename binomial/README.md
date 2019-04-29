@@ -5,10 +5,10 @@ binomial
 
 <!-- badges: start -->
 <!-- badges: end -->
-The goal of the `"binomial"` package is to provide functions for calulating the properties of the binomial random variable, including:
+The goal of the `"binomial"` package is to provide functions for calculating the properties of the binomial random variable, including:
 - `bin_variable()` creates a binomial variable when given `n` trials and `p` probability
 
--   `bin_probability()` caculates the probability of getting `k` successes out of `n` trials with a probability `p`
+-   `bin_probability()` calculates the probability of getting `k` successes out of `n` trials with a probability `p`
 
 -   `bin_distribution()` outputs a data frame of the binomial distribution of `n` trials given a probability of `p`
 
@@ -19,13 +19,7 @@ The goal of the `"binomial"` package is to provide functions for calulating the 
 Installation
 ------------
 
-You can install the released version of binomial from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("binomial")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
