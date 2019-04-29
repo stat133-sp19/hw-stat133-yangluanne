@@ -9,7 +9,7 @@ bin_choose(n, k)
 \arguments{
 \item{n}{number of trials; a numeric vector}
 
-\item{k}{number of successes out of the number of combinations; a numeric vector}
+\item{k}{number of successes out of the number of trials; a numeric vector}
 }
 \value{
 the number of combinantions in which k successes can occur in n trials
