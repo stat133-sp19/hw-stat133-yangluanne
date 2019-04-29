@@ -66,13 +66,13 @@ bin_distribution <- function(trials, prob) {
 
 #' @export
 plot.bindis <- function(x, ...) {
-  return(ggplot2::ggplot(x, ggplot2::aes(x = x$success, y = x$probability)) +
-           ggplot2::geom_bar(stat = 'identity') +
-           ggplot2::ggtitle('Probability Distribution') + ggplot2::ylab('Probability') + ggplot2::xlab('Success'))
+  return(barplot(x$success, x$probability, names.arg = x$success, main = 'Probability Distribution', xlab = 'Success', ylab = 'Probability'))
 }
 
-# barplot(x$Success, x$probability, names.arg = x$Success,
-#         main = 'Probability Distribution'), xlab = 'Success', ylab = 'Probability')
+# ggplot2::ggplot(x, ggplot2::aes(x = x$success, y = x$probability)) +
+#   ggplot2::geom_bar(stat = 'identity') +
+#   ggplot2::ggtitle('Probability Distribution') + ggplot2::ylab('Probability') + ggplot2::xlab('Success')
+
 
 #' @title bin_cumulative
 #' @description caculates the cumulated probability for each additional trial
@@ -99,13 +99,12 @@ bin_cumulative <- function(trials, prob) {
 
 #' @export
 plot.bincum <- function(x, ...) {
-  return(ggplot2::ggplot(x, ggplot2::aes(x$success, x$cumulative)) + ggplot2::geom_point()
-         + ggplot2::geom_line() + ggplot2::xlab('Success') + ggplot2::ylab('Probability'))
+  return(plot(x$success, x$cumulative, pch = 19, type = 'b', main = 'Cumulative Distribution', xlab = 'Success', ylab = 'Probability'))
 }
+#
+# ggplot2::ggplot(x, ggplot2::aes(x$success, x$cumulative)) + ggplot2::geom_point()
+# + ggplot2::geom_line() + ggplot2::xlab('Success') + ggplot2::ylab('Probability')
 
-
-# plot(x$success, x$cumulative, pch = 19, type = 'b',
-#      xlab = 'Success', ylab = 'Probability')
 
 #' @title bin_variable
 #' @description an object of class "binvar", that is, a binomial random variable object
