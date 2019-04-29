@@ -15,7 +15,7 @@ aux_mode <- function(trials, prob) {
   if (m %% 1 == 0) {
     return(c(m, m-1))
   } else {
-    return(round(m, digits = 0))
+    return(as.integer(m))
   }
 }
 
