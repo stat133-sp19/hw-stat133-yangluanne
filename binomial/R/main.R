@@ -1,4 +1,4 @@
-library(ggplot2)
+#library(ggplot2)
 
 #' @title bin_choose
 #' @param n number of trials; a numeric vector
