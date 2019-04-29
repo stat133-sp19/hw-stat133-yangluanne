@@ -2,7 +2,7 @@
 
 #' @title bin_choose
 #' @param n number of trials; a numeric vector
-#' @param k number of successes out of the number of combinations; a numeric vector
+#' @param k number of successes out of the number of trials; a numeric vector
 #' @return the number of combinantions in which k successes can occur in n trials
 #' @export
 #' @examples

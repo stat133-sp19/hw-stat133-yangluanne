@@ -19,7 +19,7 @@ check_trials <- function(trials) {
 # test if an input success is a valid value for number of successes
 check_success <- function(success, trials) {
   check_trials(trials)
-  if (!is.numeric(success) | length(success) < 1) {
+  if (!is.numeric(success) || length(success) < 1 || success < 0 || any(!(success%%1 == 0))) {
     stop("invalid success value")
   } else if (any(trials < success)) {
     stop("success cannot be greater than trials")
