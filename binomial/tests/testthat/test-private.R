@@ -1,6 +1,8 @@
-source('../../R/private.R')
+context("test-private")
 
-context("Test Private Auxiliary Functions")
+test_that("multiplication works", {
+  expect_equal(2 * 2, 4)
+})
 
 test_that("aux_mean works as expected", {
   expect_equal(aux_mean(10, 0.3), 3)

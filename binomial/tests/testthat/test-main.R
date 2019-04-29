@@ -1,6 +1,8 @@
-source('../../R/private.R')
+context("test-test-main")
 
-context("Test Main Functions")
+test_that("multiplication works", {
+  expect_equal(2 * 2, 4)
+})
 
 test_that("bin_choose works as expected", {
   expect_equal(bin_choose(5, 2), 10)
@@ -39,5 +41,3 @@ test_that("bin_cumulative works as expected", {
   expect_equal(bin_cumulative(trials = 5, prob = 0.5)[[2]][1], bin_cumulative(trials = 5, prob = 0.5)[[3]][1])
   expect_equal(bin_cumulative(trials = 5, prob = 0.5)[[3]][2], 0.18750)
 })
-
-

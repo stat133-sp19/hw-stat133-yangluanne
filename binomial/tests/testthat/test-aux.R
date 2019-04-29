@@ -1,6 +1,8 @@
-source('../../R/private.R')
+context("test-test-aux")
 
-context("Test Private Checker Functions")
+test_that("multiplication works", {
+  expect_equal(2 * 2, 4)
+})
 
 test_that("check_prob works as expected", {
   expect_true(check_prob(0.5))
@@ -32,4 +34,5 @@ test_that("check_success errors as expect", {
   expect_error(check_success(c(), 2), 'invalid success value')
   expect_error(check_success(c(1, 2, 3), -1), 'invalid trials value')
 })
+
 
