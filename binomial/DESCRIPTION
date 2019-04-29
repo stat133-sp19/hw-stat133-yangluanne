@@ -10,4 +10,12 @@ Description: Functions to caculate probabilities of a binomial random variable a
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    dplyr,
+    ggplot2
+RoxygenNote: 6.1.1
