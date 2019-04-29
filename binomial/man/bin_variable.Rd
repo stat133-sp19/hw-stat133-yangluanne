@@ -19,6 +19,7 @@ an object of class "binvar", that is, a binomial random variable object
 }
 \examples{
 var <- bin_variable(trials = 5, prob = 0.5)
+var
 
 summary(var)
 }
