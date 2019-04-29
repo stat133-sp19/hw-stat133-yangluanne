@@ -17,13 +17,6 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(binomial)
 ```
-kill DESCRIPTION and hello.Rd
- use devtools::document() in console
- use devtools::check_man() in console to check that the man file is ok
-  want to see "no issues detected"
- use devtools::tests() to run tests
- use devtools::build() to build the package
- devtools::vignettes()
 
 ## Binomial Distribution 
 The binomial distribution is a probability model that is used to calculate probabilities about the number of successes in a fixed number of random yet identical trials.
