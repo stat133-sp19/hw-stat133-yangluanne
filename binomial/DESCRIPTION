@@ -7,7 +7,7 @@ Maintainer: Luanne Yang <yangluanne@berkeley.edu>
 Description: Functions to caculate probabilities of a binomial random variable and 
     related caculations including probability distribution, expected 
     value, vairance, mode, skewness and kurtosis.
-License: GPL-2
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Suggests: 
