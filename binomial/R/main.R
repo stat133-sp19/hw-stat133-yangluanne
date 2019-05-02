@@ -1,4 +1,3 @@
-#library(ggplot2)
 
 #' @title bin_choose
 #' @param n number of trials; a numeric vector
@@ -66,7 +65,7 @@ bin_distribution <- function(trials, prob) {
 
 #' @export
 plot.bindis <- function(x, ...) {
-  return(barplot(x$success, x$probability, names.arg = x$success, main = 'Probability Distribution', xlab = 'Success', ylab = 'Probability'))
+  return(barplot(x$probability, names.arg = x$success, main = 'Probability Distribution', xlab = 'Success', ylab = 'Probability'))
 }
 
 # ggplot2::ggplot(x, ggplot2::aes(x = x$success, y = x$probability)) +
