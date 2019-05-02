@@ -1,0 +1,79 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# Binomial03
+
+The goal of the `"Binomial03"` package is to provide functions for calculating the properties of the binomial random variable, including:  
+- `bin_variable()` creates a binomial variable when given `n` trials and `p` probability  
+
+- `bin_probability()` calculates the probability of getting `k` successes out of `n` trials with a probability `p`  
+
+- `bin_distribution()` outputs a data frame of the binomial distribution of `n` trials given a probability of `p`  
+
+- `bin_cumulative()` outputs a data frame of cumulative binomial distribution given a `n` trials and a probability of `p`  
+
+- `bin_mode()`, `bin_mean()`, `bin_variance()`, `bin_skewness()`, `bin_kurtosis()` are summary measures
+
+## Installation
+
+You can install the released version of Binomial03 from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("Binomial03")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat133-sp19/hw-stat133-yangluanne")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+```{r example}
+library(Binomial03)
+
+# binomial random variable
+X <- bin_variable(trials = 5, prob = 0.5)
+X
+
+# binomial probability
+bin_probability(success = 2, trials = 5, prob = 0.5)
+
+# binomial distribution
+dist <- bin_distribution(trials = 5, prob = 0.5)
+dist
+
+# binomial ditribution plot
+plot(dist)
+
+# binomial cumulative distribution
+cumu <- bin_cumulative(trials = 5, prob = 0.5)
+cumu
+
+# binomial cumulative distribution plot
+plot(cumu)
+
+# binomial random variable summary statistics
+summary(X)
+
+# summary measures
+bin_mean(5, 0.5)
+bin_variance(5, 0.5)
+bin_mode(5, 0.5)
+bin_skewness(5, 0.5)
+bin_kurtosis(5, 0.5)
+
+```
