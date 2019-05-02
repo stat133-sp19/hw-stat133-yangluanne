@@ -1,4 +1,4 @@
-context("test-test-main")
+context("test-main")
 
 test_that("multiplication works", {
   expect_equal(2 * 2, 4)
