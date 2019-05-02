@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Introduction-to-Binomial</title>
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+<link href="data:text/css;charset=utf-8,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23header%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%20code%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Introduction-to-Binomial</h1>
+
+
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(binomial)</code></pre></div>
+<p>kill DESCRIPTION and hello.Rd use devtools::document() in console use devtools::check_man() in console to check that the man file is ok want to see “no issues detected” use devtools::tests() to run tests use devtools::build() to build the package devtools::vignettes()</p>
+<div id="binomial-distribution" class="section level2">
+<h2>Binomial Distribution</h2>
+<p>The binomial distribution is a probability model that is used to calculate probabilities about the number of successes in a fixed number of random yet identical trials.</p>
+<p>The <code>&quot;binomial&quot;</code> package includes functions for calculating probabilities of a Binomial random variable and related properties including: * expected value * variance * mode * skewness * kurtosis * binomial distribution * cumulative probabilities * plots</p>
+</div>
+<div id="creating-a-binomial-variable" class="section level2">
+<h2>Creating a Binomial Variable</h2>
+<p>Suppose we have a fair coin that is either heads or tails. Let <span class="math inline">\(X =\)</span>number of heads from flipping the fair coin 5 times.</p>
+<p>To create a binomial variable object, use the <code>bin_variabe()</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">X &lt;-<span class="st"> </span><span class="kw">bin_variable</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+X
+<span class="co">#&gt; &quot;Binomial variable&quot; </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; Parameters</span>
+<span class="co">#&gt; - number of trials: 5 </span>
+<span class="co">#&gt; - prob of success: 0.5</span></code></pre></div>
+</div>
+<div id="probability" class="section level2">
+<h2>Probability</h2>
+<p>Use the <code>bin_probability()</code> function to find the probability of <span class="math inline">\(X=x\)</span>.</p>
+<p>For example, if we want to find the probability of getting 2 heads out of 5 flips of the fair coins (<span class="math inline">\(P(X = x) = 2\)</span>), call <code>bin_probability()</code> with arguments, 2, 5, and 0.5.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bin_probability</span>(<span class="dv">2</span>, <span class="dv">5</span>, <span class="fl">0.5</span>)
+<span class="co">#&gt; [1] 0.3125</span></code></pre></div>
+</div>
+<div id="distributions-and-plots" class="section level2">
+<h2>Distributions and Plots</h2>
+<p>We can find the probability distribution of <span class="math inline">\(X\)</span> with the <code>bin_distribution()</code> function. The function outputs a table with ‘Success’ as the first column and ‘Probability’ as the second.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dist &lt;-<span class="st"> </span><span class="kw">bin_distribution</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+dist
+<span class="co">#&gt;   success probability</span>
+<span class="co">#&gt; 1       0     0.03125</span>
+<span class="co">#&gt; 2       1     0.15625</span>
+<span class="co">#&gt; 3       2     0.31250</span>
+<span class="co">#&gt; 4       3     0.31250</span>
+<span class="co">#&gt; 5       4     0.15625</span>
+<span class="co">#&gt; 6       5     0.03125</span></code></pre></div>
+<p>Plot the probability distribution by calling the <code>plot()</code> on the distribution table.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(dist)</code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>Other then the probability distribution, we can also find the cumulative probability distribution with the <code>bin_cumulative()</code> function. The function also returns a table similar to the probability distribution table but with an addition column,‘cumulative’, that includes the cumulative probability of each success.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cum &lt;-<span class="st"> </span><span class="kw">bin_cumulative</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+cum
+<span class="co">#&gt;   success probability cumulative</span>
+<span class="co">#&gt; 1       0     0.03125    0.03125</span>
+<span class="co">#&gt; 2       1     0.15625    0.18750</span>
+<span class="co">#&gt; 3       2     0.31250    0.50000</span>
+<span class="co">#&gt; 4       3     0.31250    0.81250</span>
+<span class="co">#&gt; 5       4     0.15625    0.96875</span>
+<span class="co">#&gt; 6       5     0.03125    1.00000</span></code></pre></div>
+<p>We can also plot the cumulative probability distribution with <code>plot()</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cum)</code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="summary-statistics" class="section level2">
+<h2>Summary Statistics</h2>
+<p>Use <code>summary()</code> to see all the parameters and measures of <span class="math inline">\(X\)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(X)
+<span class="co">#&gt; &quot;Summary Binomial&quot; </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; Parameters </span>
+<span class="co">#&gt; - number of trials: 5 </span>
+<span class="co">#&gt; - prob of success: 0.5 </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; Measures </span>
+<span class="co">#&gt; - mean    : 2.5 </span>
+<span class="co">#&gt; - variance: 1.25 </span>
+<span class="co">#&gt; - mode    : 3 2 </span>
+<span class="co">#&gt; - skewness: 0 </span>
+<span class="co">#&gt; - kurtosis: -0.4</span></code></pre></div>
+<p>We can also find the measures of <span class="math inline">\(X\)</span> individually.</p>
+<div id="mean" class="section level3">
+<h3>Mean</h3>
+<p>To find the expected value of <span class="math inline">\(X\)</span>, we can use the <code>bin_mean()</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bin_mean</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+<span class="co">#&gt; [1] 2.5</span></code></pre></div>
+</div>
+<div id="variance" class="section level3">
+<h3>Variance</h3>
+<p>To find the variance of <span class="math inline">\(X\)</span>, we can use the <code>bin_variance()</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bin_variance</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+<span class="co">#&gt; [1] 1.25</span></code></pre></div>
+</div>
+<div id="mode" class="section level3">
+<h3>Mode</h3>
+<p>The most likely number of success in 5 independent flips of a fair coin can be found with <code>bin_mode()</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bin_mode</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+<span class="co">#&gt; [1] 3 2</span></code></pre></div>
+</div>
+<div id="skewness" class="section level3">
+<h3>Skewness</h3>
+<p>Skewness is a measure of the asymmetry of the probability distribution of a random variable about its mean. To find the skewness of <span class="math inline">\(X\)</span>, we can use the <code>bin_skewness()</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bin_skewness</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+<span class="co">#&gt; [1] 0</span></code></pre></div>
+</div>
+<div id="kurtosis" class="section level3">
+<h3>Kurtosis</h3>
+<p>The Kurtosis is a measure of the “tailedness” of the probability distribution of a random variable. To find the kurtosis of <span class="math inline">\(X\)</span>, we can use the <code>bin_kurtosis()</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bin_kurtosis</span>(<span class="dv">5</span>, <span class="fl">0.5</span>)
+<span class="co">#&gt; [1] -0.4</span></code></pre></div>
+</div>
+</div>
+
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

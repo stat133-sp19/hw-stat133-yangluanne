@@ -1,0 +1,18 @@
+Package: binomial
+Type: Package
+Title: Functions for Binomial Distribution
+Version: 0.1.0
+Author: Luanne Yang
+Maintainer: Luanne Yang <yangluanne@berkeley.edu>
+Description: Functions to caculate probabilities of a binomial random variable and 
+    related caculations including probability distribution, expected 
+    value, vairance, mode, skewness and kurtosis.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Imports: dplyr, ggplot2
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-04-26 21:11:01 UTC; Luanne
