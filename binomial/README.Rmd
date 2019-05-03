@@ -27,7 +27,7 @@ The goal of the `"binomial"` package is to provide functions for calculating the
 
 ## Installation
 
-You can install the released version of Binomial03 from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of binomial from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("binomial")
