@@ -1,7 +1,8 @@
 #' @title bin_choose
+#' @description number of k successes out of n trials
 #' @param n number of trials; a numeric vector
 #' @param k number of successes out of the number of trials; a numeric vector
-#' @return the number of combinantions in which k successes can occur in n trials
+#' @return the number of combinations in which k successes can occur in n trials
 #' @export
 #' @examples
 #' bin_choose(n = 5, k = 2)

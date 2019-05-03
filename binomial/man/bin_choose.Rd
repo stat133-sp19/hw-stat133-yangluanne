@@ -12,10 +12,10 @@ bin_choose(n, k)
 \item{k}{number of successes out of the number of trials; a numeric vector}
 }
 \value{
-the number of combinantions in which k successes can occur in n trials
+the number of combinations in which k successes can occur in n trials
 }
 \description{
-bin_choose
+number of k successes out of n trials
 }
 \examples{
 bin_choose(n = 5, k = 2)
