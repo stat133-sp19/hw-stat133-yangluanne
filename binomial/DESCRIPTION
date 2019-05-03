@@ -1,4 +1,4 @@
-Package: Binomial03
+Package: binomial
 Type: Package
 Title: Functions for Binomial Distribution
 Version: 0.1.0

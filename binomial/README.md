@@ -3,7 +3,7 @@
 Binomial03
 ==========
 
-The goal of the `"Binomial03"` package is to provide functions for calculating the properties of the binomial random variable, including:
+The goal of the `"binomial"` package is to provide functions for calculating the properties of the binomial random variable, including:
 - `bin_variable()` creates a binomial variable when given `n` trials and `p` probability
 
 -   `bin_probability()` calculates the probability of getting `k` successes out of `n` trials with a probability `p`
@@ -20,7 +20,7 @@ Installation
 You can install the released version of Binomial03 from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("Binomial03")
+install.packages("binomial")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
@@ -36,7 +36,7 @@ Example
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(Binomial03)
+library(binomial)
 
 # binomial random variable
 X <- bin_variable(trials = 5, prob = 0.5)
@@ -64,6 +64,12 @@ dist
 
 # binomial ditribution plot
 plot(dist)
+#> Warning in plot.window(xlim, ylim, log = log, ...): "names.args" is not a
+#> graphical parameter
+#> Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+#> "names.args" is not a graphical parameter
+#> Warning in axis(if (horiz) 1 else 2, cex.axis = cex.axis, ...):
+#> "names.args" is not a graphical parameter
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />

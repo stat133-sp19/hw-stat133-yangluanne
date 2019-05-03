@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # Binomial03
 
-The goal of the `"Binomial03"` package is to provide functions for calculating the properties of the binomial random variable, including:  
+The goal of the `"binomial"` package is to provide functions for calculating the properties of the binomial random variable, including:  
 - `bin_variable()` creates a binomial variable when given `n` trials and `p` probability  
 
 - `bin_probability()` calculates the probability of getting `k` successes out of `n` trials with a probability `p`  
@@ -30,7 +30,7 @@ The goal of the `"Binomial03"` package is to provide functions for calculating t
 You can install the released version of Binomial03 from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("Binomial03")
+install.packages("binomial")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
@@ -43,7 +43,7 @@ devtools::install_github("stat133-sp19/hw-stat133-yangluanne/binomial")
 
 This is a basic example which shows you how to solve a common problem:
 ```{r example}
-library(Binomial03)
+library(binomial)
 
 # binomial random variable
 X <- bin_variable(trials = 5, prob = 0.5)
