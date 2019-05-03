@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Binomial03
-==========
+binomial
+========
 
 The goal of the `"binomial"` package is to provide functions for calculating the properties of the binomial random variable, including:
 - `bin_variable()` creates a binomial variable when given `n` trials and `p` probability
