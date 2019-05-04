@@ -11,7 +11,8 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
-```
+```  
+
 # binomial
 
 The goal of the `"binomial"` package is to provide functions for calculating the properties of the binomial random variable, including:  

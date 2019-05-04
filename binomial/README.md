@@ -17,7 +17,7 @@ The goal of the `"binomial"` package is to provide functions for calculating the
 Installation
 ------------
 
-You can install the released version of Binomial03 from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of binomial from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("binomial")
@@ -64,12 +64,6 @@ dist
 
 # binomial ditribution plot
 plot(dist)
-#> Warning in plot.window(xlim, ylim, log = log, ...): "names.args" is not a
-#> graphical parameter
-#> Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
-#> "names.args" is not a graphical parameter
-#> Warning in axis(if (horiz) 1 else 2, cex.axis = cex.axis, ...):
-#> "names.args" is not a graphical parameter
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
