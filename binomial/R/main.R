@@ -22,7 +22,7 @@ bin_choose <- function(n, k) {
 #' @description takes in three arguments and caculates the binomial probability of k successes in n trials given p probability
 #' @param success number of successes out of the trials; numeric vector
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #'
 #' @return binomial probability of k successes in n trials given p probability
 #' @export
@@ -43,9 +43,9 @@ bin_probability <- function(success, trials, prob) {
 #' @title bin_distribution
 #' @description caculates the probability distribution of success out of a given number trials with a given probability
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #'
-#' @return return a data frame with the probability distribution: sucesses in the first column, probability in the second column
+#' @return return a data frame with the probability distribution (sucesses in the first column, probability in the second column)
 #' @export
 #'
 #' @examples
@@ -72,9 +72,9 @@ plot.bindis <- function(x, ...) {
 #' @title bin_cumulative
 #' @description caculates the cumulated probability for each additional trial
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #'
-#' @return a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @return a data frame with both the probability distribution and the cumulative probabilities (sucesses in the first column, probability in the second column, and cumulative probability in the third column)
 #' @export
 #'
 #' @examples
@@ -101,7 +101,7 @@ plot.bincum <- function(x, ...) {
 #' @title bin_variable
 #' @description an object of class "binvar", that is, a binomial random variable object
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #'
 #' @return a list with named elements: trials (a number of trials) and prob (probability of success)
 #' @export
@@ -162,7 +162,7 @@ print.summary.binvar <- function(x, ...) {
 #' @title bin_mean
 #' @description summary measure for finding mean of a binomial distribution
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #' @return the mean of a binomial distribution when given trials and prob
 #' @export
 #' @examples
@@ -176,7 +176,7 @@ bin_mean <- function(trials, prob) {
 #' @title bin_variance
 #' @description summary measure for finding variance of a binomial distribution
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #' @return the variance of a binomial distribution when given trials and prob
 #' @export
 #' @examples
@@ -190,7 +190,7 @@ bin_variance <- function(trials, prob) {
 #' @title bin_mode
 #' @description summary measure for finding mode of a binomial distribution
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #' @return the mode of a binomial distribution when given trials and prob
 #' @export
 #' @examples
@@ -204,7 +204,7 @@ bin_mode <- function(trials, prob) {
 #' @title bin_skewness
 #' @description summary measure for finding skewness of a binomial distribution
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #' @return the skewness of a binomial distribution when given trials and prob
 #' @export
 #' @examples
@@ -218,7 +218,7 @@ bin_skewness <- function(trials, prob) {
 #' @title bin_kurtosis
 #' @description summary measure for finding kurtosis of a binomial distribution
 #' @param trials number of trials; numeric vector
-#' @param prob probability of success; numberic vector
+#' @param prob probability of success; numeric vector
 #' @return the kurtosis of a binomial distribution when given trials and prob
 #' @export
 #' @examples

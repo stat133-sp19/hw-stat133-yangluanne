@@ -11,11 +11,15 @@ aux_variance <- function(trials, prob) {
 # measures the most likely number of success in a number of trials with probability prob
 aux_mode <- function(trials, prob) {
   m <-  trials * prob + prob
-  if (m %% 1 == 0) {
-    return(c(m, m-1))
-  } else {
-    return(as.integer(m))
+  mod <- c()
+  for (ele in m) {
+    if (as.integer(ele) == ele) {
+      mod <- c(mod, c(ele, ele-1))
+    } else {
+      mod <- c(mod, as.integer(ele))
+    }
   }
+  return(mod)
 }
 
 # measure the asymmetry of the probability distribution of a random variable about its mean

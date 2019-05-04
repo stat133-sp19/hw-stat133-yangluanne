@@ -18,6 +18,7 @@ test_that("check_prob errors as expected", {
 test_that("check_trials works as expected", {
   expect_true(check_trials(1))
   expect_type(check_trials(1), 'logical')
+  expect_length(check_trials(1), 1)
 })
 
 test_that("check_trials errors as expected", {

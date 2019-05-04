@@ -11,7 +11,7 @@ bin_probability(success, trials, prob)
 
 \item{trials}{number of trials; numeric vector}
 
-\item{prob}{probability of success; numberic vector}
+\item{prob}{probability of success; numeric vector}
 }
 \value{
 binomial probability of k successes in n trials given p probability

@@ -9,10 +9,10 @@ bin_cumulative(trials, prob)
 \arguments{
 \item{trials}{number of trials; numeric vector}
 
-\item{prob}{probability of success; numberic vector}
+\item{prob}{probability of success; numeric vector}
 }
 \value{
-a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+a data frame with both the probability distribution and the cumulative probabilities (sucesses in the first column, probability in the second column, and cumulative probability in the third column)
 }
 \description{
 caculates the cumulated probability for each additional trial

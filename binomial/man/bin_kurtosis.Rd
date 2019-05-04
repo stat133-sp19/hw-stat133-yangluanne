@@ -9,7 +9,7 @@ bin_kurtosis(trials, prob)
 \arguments{
 \item{trials}{number of trials; numeric vector}
 
-\item{prob}{probability of success; numberic vector}
+\item{prob}{probability of success; numeric vector}
 }
 \value{
 the kurtosis of a binomial distribution when given trials and prob

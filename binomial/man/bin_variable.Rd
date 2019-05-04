@@ -9,7 +9,7 @@ bin_variable(trials, prob)
 \arguments{
 \item{trials}{number of trials; numeric vector}
 
-\item{prob}{probability of success; numberic vector}
+\item{prob}{probability of success; numeric vector}
 }
 \value{
 a list with named elements: trials (a number of trials) and prob (probability of success)

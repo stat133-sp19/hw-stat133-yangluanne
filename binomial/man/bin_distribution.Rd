@@ -9,10 +9,10 @@ bin_distribution(trials, prob)
 \arguments{
 \item{trials}{number of trials; numeric vector}
 
-\item{prob}{probability of success; numberic vector}
+\item{prob}{probability of success; numeric vector}
 }
 \value{
-return a data frame with the probability distribution: sucesses in the first column, probability in the second column
+return a data frame with the probability distribution (sucesses in the first column, probability in the second column)
 }
 \description{
 caculates the probability distribution of success out of a given number trials with a given probability
